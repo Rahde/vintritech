@@ -1,5 +1,7 @@
 import Axios from "axios";
 
+// Any future modules will use getDataObject and getList, etc.
+// Makes add new modules easier as we can just swap out the reference and keep all the function names the same
 const state = {
     bookInfo: null,
     books: [],

@@ -8,11 +8,13 @@ class BookController extends Controller
 {
     public function featured()
     {
-        return book::get()->toArray();
+        // Featured books to appear on front page
+        return book::where("featured",1)->get()->toArray();
     }
 
     public function detail($book_id)
     {
+        // Retreive single gook data
         return book::find($book_id)->first();
     }
 }

@@ -1,3 +1,5 @@
+// controls the view components that appear in Main.vue <component :is="viewer" ref="viewer" class="fullWidth" />
+
 const state = {
     src: null
 };

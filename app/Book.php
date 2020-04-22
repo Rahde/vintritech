@@ -6,8 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Book extends Model
 {
+    // appends all relation data
     protected $appends = ['author','collection','genre','reviews','subject','tag','weight','loan']; //
 
+    // do not need to include when data was added to the database
     protected $hidden = [
         'created_at','deleted_at'
     ];
